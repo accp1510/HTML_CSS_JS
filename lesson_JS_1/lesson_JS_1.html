@@ -1,0 +1,78 @@
+<DOCUMENT html>
+<html>
+<head>
+	<title>
+		Первое занятие по скриптам
+	</title>
+		<link rel='stylesheet' href='css/st.css'>
+		<script>
+				
+	<!--		var n ,f;											-->
+	<!--		n=prompt("Ваше имя?","");							-->
+	<!--		f=prompt("Вашa фамилия?","");						-->
+	<!--		alert("Привет!"+" "+n+" "+f);						-->
+				
+	<!--		var a,b,c;											-->
+	<!--		a=prompt("Число 1","");								-->
+	<!--		b=prompt("Число 2","");								-->
+	<!--		a=parseInt(a);										-->
+	<!--		b=parseInt(b);										-->
+	<!--		c=a+b;												-->
+	<!--		alert(c);											-->
+			
+			function Summa()
+			{
+				var a,b,s;
+				a=one.value;
+				a=parseInt(a);
+				b=two.value;
+				b=parseInt(b);
+				s=a+b;
+				res.innerHTML="Рузультат "+s;
+			}
+			function Raznost()
+			{
+				var a,b,s;
+				a=one.value;
+				a=parseInt(a);
+				b=two.value;
+				b=parseInt(b);
+				s=a-b;
+				res.innerHTML="Рузультат "+s;
+			}
+			function Umnoz()
+			{
+				var a,b,s;
+				a=one.value;
+				a=parseInt(a);
+				b=two.value;
+				b=parseInt(b);
+				s=a*b;
+				res.innerHTML="Рузультат "+s;
+			}
+			function Chastn()
+			{
+				var a,b,s;
+				a=one.value;
+				a=parseInt(a);
+				b=two.value;
+				b=parseInt(b);
+				s=a/b;
+				res.innerHTML="Рузультат "+s;
+			}
+			
+		</script>
+	
+</head>
+<body>
+	<div class='content'>
+	<input type=text name="one" id="one" size=50 value="число 1"><br>
+	<input type=text name="two" id="two" size=50 value="число 2"><br>
+	<input type=button value="Сложить" onClick="Summa()">
+	<input type=button value="Вычесть" onClick="Raznost()">
+	<input type=button value="Умножить" onClick="Umnoz()">
+	<input type=button value="Разделить" onClick="Chastn()">
+	<p id="res">РЕЗУЛЬТАТ</p>
+	<div>
+</body>
+</html>

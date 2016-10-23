@@ -1,0 +1,26 @@
+﻿<!DOCUMENT html>
+<html>
+<head>
+	<title>
+		Пятое занятие по скриптам
+	</title>
+		<link rel='stylesheet' href='css/st.css'>
+		<script src="js/script.js"></script>
+	
+</head>
+<body onload="ShowTime(); ShowOn();">
+	<div class="content">
+		<img id="pic" name="pic" src="images/img1.jpg" onMouseOver="ShowImage(2);" onMouseOut="ShowImage(1);">
+		
+		<br><p id="ptime"></p>
+		
+		<br><br>
+		
+		<img id="picf" name="picf" src="images/1.gif">
+		
+		<br>
+		<input type="button" value="Старт" onClick="StartShow();">
+		<input type="button" value="Стоп" onClick="StopShow();">
+	</div>
+</body>
+</html>

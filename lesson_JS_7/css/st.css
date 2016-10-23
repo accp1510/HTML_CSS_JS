@@ -1,0 +1,25 @@
+﻿*{margin:0; padding:0;}
+.content
+	{
+		width:777px;
+		margin:auto auto;
+		padding:55px 55px 55px 55px;
+	}
+#kub1
+	{
+		width: 50px;
+		height: 50px;
+		background: orange;
+		position: absolute;
+		left: 100px;
+		top: 100px;
+	}
+#kub2
+	{
+		width: 50px;
+		height: 50px;
+		background: green;
+		position: absolute;
+		left: 500px;
+		top: 500px;
+	}

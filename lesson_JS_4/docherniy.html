@@ -1,0 +1,39 @@
+<!DOCUMENT html>
+<html>
+<head>
+	<title>
+		Äî÷åðíåå
+	</title>
+		<link rel='stylesheet' href='css/st.css'>
+		<script>
+			function CloseSeb()
+				{
+					self.close();
+				}
+			function OpenDoch()
+				{
+					myWnd = window.open("docherniy.html","wnd1","width=500,height=400,status=on,toolbar=no,menubar=no");
+				}
+			function CloseDoch()
+				{
+					myWnd.close();
+				}
+			
+			function RebDoch()
+				{
+					myWnd.location="http://google.com";
+					myWnd.focus();
+				}
+		</script>
+	
+</head>
+<body>
+	<div class="content">
+			
+		<input type=button value="ÇÀÊÐÛÒÜ ÑÅÁß" onClick="CloseSeb();">
+		<input type=button value="ÇÀÊÐÛÒÜ ÐÎÄÈÒÅËß" onClick="NewWnd();">
+		<input type=button value="ÏÅÐÅÇÀÃÐÓÇÈÒÜ ÐÎÄÈÒÅËß" onClick="NewWnd();">
+	
+	</div>
+</body>
+</html>

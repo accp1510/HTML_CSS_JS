@@ -1,0 +1,55 @@
+#wrapper
+	{
+		width:1500px;
+		position:relative;
+		left:50%;
+		margin-left:-750px;
+		border: solid 1px black;
+	}
+#logo
+	{
+		width:1500px;
+		border: solid 1px black;
+	}
+#nav
+	{
+		width:398px;
+		float:left;
+		border: solid 1px black;
+	}
+#content
+	{
+		width:1058px;
+		float:right;
+		border: solid 1px black;
+		text-align:left;
+		padding:20px;
+	}
+#footer
+	{
+		width:1500px;
+		clear:both;
+		border: solid 1px black;
+	}
+#lg1
+	{
+		efloat:left;
+	}
+#lg2
+	{
+		efloat:right;
+	}
+body
+	{
+		background:#F1DEA3;
+		color:#040B27;
+		font-family:'Comic Sans MS';
+	}
+h1
+	{
+		text-align:center;
+	}
+form
+	{
+		padding-left:15px;
+	}

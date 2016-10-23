@@ -1,0 +1,125 @@
+<DOCUMENT html>
+<html>
+<head>
+	<title>
+		Третье занятие по скриптам
+	</title>
+		<link rel='stylesheet' href='css/st.css'>
+		<script>
+			
+			function Pokeda()
+			{
+			if (confirm("Хотите Уйти?"))
+					self.location="https://ya.ru"
+			else
+					alert("Оставайся, Гостем Будешь");
+			}
+			function DayRoz()
+				{
+					var d = new Date(), n = new Date();
+					n.setMonth(3);
+					n.setDate(12);
+					n.setFullYear(d.getFullYear());
+					s=n-d;
+					s=s/1000/60/60/24;
+					if(s<=0)
+						{
+						n.setFullYear(d.getFullYear()+1);
+						s=n-d;
+						s=s/1000/60/60/24;roz.innerHTML="До Дня Рождения осталось: "+s+" дня";
+						}
+					else 
+						{
+						roz.innerHTML="До Дня Рождения осталось: "+s+" дня";
+						}
+				}
+			function Versia()
+				{
+					var s=navigator.appVersion;
+					ver.innerHTML=s;
+				}
+			function CaseColor()
+				{
+					d1.style.backgroundColor=selC.value;
+				}
+			function CaseSize()
+				{
+					d1.style.fontSize=selS.value;
+				}
+			function CaseColorText()
+				{
+					d1.style.color=selCT.value;
+				}
+			function CaseFF()
+				{
+					d1.style.fontFamily=selSH.value;
+					d1.style.border=selBR.value;
+				}
+			function ColorTable(t)
+				{
+					var table=document.getElementById(t);
+					var rows=table.getElementsByTagName("tr");
+					for(i=0;i<rows.lenght;i++)
+						{
+							if((i%2)==0)
+								{
+									rows[i].className="classOne"
+								}
+						}
+				}
+		</script>
+	
+</head>
+<body onLoad="DayRoz(), Versia(), ColorTable('tableONE')">
+	<div class='content'>
+			
+			<input type=button value="Уйти" onClick="Pokeda()">
+			
+			<p id=roz></p>
+			-
+			<p id=ver></p>
+			
+			<div id=d1>
+				ТУТ ИДЕТ ТЕКСТ У КОТОРОГО МЕНЯЮТСЯ СВОЙСТВА
+			</div>
+			
+			<select name="selC" onChange="CaseColor();">
+				<option value='#E81C1C'>Красный</option>
+				<option value='#1C3BE8'>Синий</option>
+				<option value='#3EE81C'>Зеленый</option>
+			</select>
+			
+			<select name="selS" onChange="CaseSize();">
+				<option value=14>Малой</option>
+				<option value=24>Средний</option>
+				<option value=54>Большой</option>
+			</select>
+			
+			<select name="selCT" onChange="CaseColorText();">
+				<option value='#E81C1C'>Красный</option>
+				<option value='#1C3BE8'>Синий</option>
+				<option value='#3EE81C'>Зеленый</option>
+			</select>
+			
+			<select name="selSH" onChange="CaseFF();">
+				<option value='Arial'>Ариал</option>
+				<option value='Comic Sans MS'>Комик</option>
+				<option value='Verdana'>Вердана</option>
+			</select>
+			<select name="selBR" onChange="CaseFF();">
+				<option value='dotted'>Пунктир</option>
+				<option value='double'>Двойная</option>
+				<option value='outset'>Странная</option>
+			</select>
+		<div>
+		
+			<table id='tableONE' border=1>
+				<tr><td>1</td><td>2</td><td>3</td></tr>
+				<tr><td>4</td><td>9</td><td>14</td></tr>
+				<tr><td>5</td><td>10</td><td>15</td></tr>
+				<tr><td>6</td><td>11</td><td>16</td></tr>
+				<tr><td>7</td><td>12</td><td>17</td></tr>
+				<tr><td>8</td><td>13</td><td>18</td></tr>			
+			</table>
+</body>
+</html>

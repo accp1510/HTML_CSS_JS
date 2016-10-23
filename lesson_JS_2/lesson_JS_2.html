@@ -1,0 +1,80 @@
+<DOCUMENT html>
+<html>
+<head>
+	<title>
+		Второе занятие по скриптам
+	</title>
+		<link rel='stylesheet' href='css/st.css'>
+		<script>
+			
+			function Pokeda()
+			{
+			if (confirm("Хотите Уйти?"))
+					alert("Гостем будешь");
+			else
+					alert("Досвидос");
+			}
+			function ShowTime()
+				{
+					var d=new Date();
+					var dy, dm, dd, th, tm, ts;
+					dy=d.getFullYear();
+					dm=d.getMonth();
+					dd=d.getDay();
+					th=d.getHours();
+					tm=d.getMinutes();
+					ts=d.getSeconds();
+					s=dy+"."+dm+1+"."+dd+"   "+th+"."+tm+"."+ts;
+					ptime.innerHTML=s;
+				}
+			function Hello()
+				{
+					var d=new Date();
+					var th;
+					th=d.getHours();
+					if((th>=4)&&(th<11)) s="Доброе Утро"
+					if((th>=11)&&(th<16)) s="Добрый День"
+					if((th>=16)&&(th<22)) s="Добрый Вечер"
+					if((th>=22)&&(th<4)) s="Добрая Ночь"
+					dobro.innerHTML=s;
+				}
+			function NewGod()
+				{
+					var d = new Date(), n = new Date();
+					n.setMonth(0);
+					n.setDate(1);
+					n.setFullYear(d.getFullYear()+1);
+					s=n-d;
+					s=s/1000/60/60/24;
+					god.innerHTML="До Нового Года осталось: "+s+" дня";
+				}
+			function DayRoz()
+				{
+					var d = new Date(), n = new Date();
+					n.setMonth(3);
+					n.setDate(12);
+					n.setFullYear(d.getFullYear());
+					s=n-d;
+					s=s/1000/60/60/24;
+					roz.innerHTML="До Дня Рождения осталось: "+s+" дня";
+				}
+		</script>
+	
+</head>
+<body onLoad="ShowTime(), Hello(), NewGod(), DayRoz()">
+	<div class='content'>
+			
+			<p id=ptime></p>
+			
+			<p id=dobro></p>
+			
+			<p id=god></p>
+			
+			<p id=roz></p>
+			
+			<input type=button value="Уйти" onClick="Pokeda()">
+			
+		<!-- <input type=button value="УЙТИ" onClick="Pokeda()"> -->
+	<div>
+</body>
+</html>

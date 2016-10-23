@@ -1,0 +1,32 @@
+﻿*{margin:0; padding:0;}
+.content
+	{
+		width:777px;
+		margin:auto auto;
+		padding:55px 55px 55px 55px;
+	}
+.classOne
+	{
+		background: red;
+	}
+.classTwo
+	{
+		background: blue;
+	}
+.clsd
+	{
+		width: 300px;
+		height: 150px;
+		border: solid 1px;
+		float: left;
+		margin-left: 50px;
+		margin-top: 50px;
+		cursor:pointer;
+	}
+.divD
+	{
+		position:absolute;
+		top: 20px;
+		left: 200px;
+		visibility: hidden;
+	}

@@ -1,0 +1,361 @@
+<DOCUMENT html>
+<html>
+<head>
+	<title>
+		Таблица с CSS
+	</title>
+	
+	<style type="text/css">
+		body
+			{
+				background:#F1DEA3;
+				color:#040B27;
+				font-family:'Comic Sans MS';
+			}
+		h1
+			{
+				text-align:center;
+			}
+		#kaps
+			{
+				text-transform:uppercase;
+			}
+		table
+			{
+				border-collapse:collapse;
+				border-color:#8B7D6B;
+				width:75%;
+				font-family:'Verdana';
+				text-align:left;
+				vertical-align:middle;
+				color:#000000;			
+			}
+		.st1
+			{
+				background-color:#E8C093;
+			}
+		.st2
+			{
+				background-color:#F3F0CD;
+			}
+		thead
+			{
+				font-family:'Verdana','Lucida Console';
+				text-align:center;
+				font-size:12pt;
+				font-weight:500;
+			}
+		tbody
+			{
+				font-family:'Calibri','Lucida Console';
+				font-size:14pt;
+			}
+		tfoot
+			{
+				font-family:'Georgia','Lucida Console';
+				font-size:12pt;
+				font-style:italic;
+				font-weight:bold;
+			}
+		.slog
+			{
+				background-color:#F2B974;
+			}
+		th,td
+			{
+				padding-top:7px;
+				padding-bottom:7px;
+				padding-left:7px;
+				padding-right:7px;
+				border-width:3px;
+				border-style:solid;
+			}
+		caption
+			{
+				caption-side:bottom;
+				padding:15px;				
+			}
+		.col1
+			{
+				background-color:YellowGreen;
+			}
+		.col2
+			{
+				background-color:Grey;
+			}
+		.banr
+			{
+				position:absolute;
+				top:100px;
+				right:100px;
+				z-index:1;
+			}
+		p
+			{
+				border:solid;
+			}
+		.pclo
+			{
+				color:green;
+				position:relative;
+				left:150px;
+			}
+		.pclt
+			{
+				color:blue;
+				position:relative;
+				right:150px;
+			}
+		.fs
+			{
+				float:right;
+				border:solid;
+			}
+	</style>
+</head>
+<body>
+	<h1>стили CSS</h1>
+	<table align=center border=1>
+	<caption>
+		Таблица с стилями CSS
+	</caption>
+	<colgroup>
+		<col class='col1'>						<!--устарел и работает если нет оформления на ячейках-->
+		<col class='col2'>
+		<col class='col1'>
+		<col class='col2'>
+		<col class='col1'>
+		<col class='col2'>
+		<col class='col1'>
+		<col class='col2'>
+	</colgroup>
+	<thead class='slog'>
+		<tr>
+			<th colspan=8 id='kaps'>
+				Планируемые мероприятия на 2016-2017 г.г (общий объем, без разбивки по годам)
+			</th>
+		</tr>
+		<tr>
+			<th colspan=2>
+				Строительство противопожарных лесных дорог
+			</th>
+			<th colspan=2>
+				Содержание противопожарных лесных дорог
+			</th>
+			<th colspan=2>
+				Устройство минполос
+			</th>
+			<th colspan=2>
+				Уход за минполосами
+			</th>
+		</tr>
+		<tr>
+			<th>
+				Участковое лесничество
+			</th>
+			<th>
+				Протяженность, км 
+			</th>
+			<th>
+				Участковое лесничество
+			</th>
+			<th>
+				Протяженность, км 
+			</th>
+			<th>
+				Участковое лесничество
+			</th>
+			<th>
+				Протяженность, км 
+			</th>
+			<th>
+				Участковое лесничество
+			</th>
+			<th>
+				Протяженность, км 
+			</th>
+		</tr>
+	<thead>
+	<tbody>
+		<tr class='st1'>
+			<td>
+				Койгородское
+			</td>
+			<td>
+				3
+			</td>
+			<td>
+				Койгородское
+			</td>
+			<td>
+				12
+			</td>
+			<td>
+				Койгородское
+			</td>
+			<td>
+				25
+			</td>
+			<td>
+				Койгородское
+			</td>
+			<td>
+				45
+			</td>
+		</tr>
+		<tr class='st2'>
+			<td>
+				Кобринское
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				Кобринское
+			</td>
+			<td>
+				4
+			</td>
+			<td>
+				Кобринское
+			</td>
+			<td>
+				14
+			</td>
+			<td>
+				Кобринское
+			</td>
+			<td>
+				24
+			</td>
+		</tr>
+		<tr class='st1'>
+			<td>
+				 Гривенское
+			</td>
+			<td>
+				5
+			</td>
+			<td>
+				 Гривенское
+			</td>
+			<td>
+				5
+			</td>
+			<td>
+				 Гривенское
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				 Гривенское
+			</td>
+			<td>
+				1
+			</td>
+		</tr>
+		<tr class='st2'>
+			<td>
+				Палаузское
+			</td>
+			<td>
+				4
+			</td>
+			<td>
+				Палаузское
+			</td>
+			<td>
+				45
+			</td>
+			<td>
+				Палаузское
+			</td>
+			<td>
+				64
+			</td>
+			<td>
+				Палаузское
+			</td>
+			<td>
+				23
+			</td>
+		</tr>
+		<tr class='st1'>
+			<td>
+				Ужгинское
+			</td>
+			<td>
+				5
+			</td>
+			<td>
+				Ужгинское
+			</td>
+			<td>
+				2
+			</td>
+			<td>
+				Ужгинское
+			</td>
+			<td>
+				4
+			</td>
+			<td>
+				Ужгинское
+			</td>
+			<td>
+				9
+			</td>
+		</tr>	
+	</tbody>
+	<tfoot class='slog'>
+		<tr>
+			<th>
+				Итог
+			</th>
+			<td>
+				19
+			</td>
+			<th>
+				Итог
+			</th>
+			<td>
+				68
+			</td>
+			<th>
+				Итог
+			</th>
+			<td>
+				109
+			</td>
+			<th>
+				Итог
+			</th>
+			<td>
+				102
+			</td>
+		</tr>		
+	</tfoot>
+	</table>
+	
+	<div class='banr'>
+		<h3 style='color:red'>Крабы по Выгодной цене</h3>
+		<img src='img/banr.gif'>
+	</div>
+	
+	<h1>Веселый Заголовок<h1>
+	
+	<p class='pclo'>пе один</p>
+	<p class='pclt'>пе два</p>
+	<p class='pclo'>пе три</p>
+	<p class='pclt'>пе четыре</p>
+	<p class='pclo'>пе пять</p>
+	
+	<h1>div float</h1>
+	
+	<div class='fs'><img src='img/banr.gif'></div>
+	<div class='fs'><img src='img/banr.gif'></div>
+	<div class='fs'><img src='img/banr.gif'></div>
+	
+</body>
+</html>
